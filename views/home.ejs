@@ -1,0 +1,50 @@
+<%- include('htmlTop'); -%>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand"><h1><b>Statify</b></h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#artists"><b>Top Artists</b></a>
+              <a class="nav-link" href="#tracks"><b>Top Tracks</b></a>
+              <a class="nav-link" href="#recent"><b>Recently Played</b></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="box1" id="about">
+
+      <p>Hey <%= data.name %> <br><br> This is Statify. You can see your top Artists, Tracks and recently played songs in Spotify.</p>
+    </div>
+    <div class="box1" id="artists">
+      <br><br>
+      <h1>Top artists</h1>
+      <%- include('box',{type:"artist", L: data.AL, M:data.AM, S: data.AS}); -%>
+    </div>
+    <div class="box1" id="tracks">
+      <br><br>
+      <h1>Top tracks</h1>
+      <%- include('box',{type:"track", L: data.TL, M:data.TM, S: data.TS}); -%>
+    </div>
+    <div class="box2" id="recent">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <br><br>
+          <h1>Recently played</h1>
+          <br><br>
+          <ul class="list-group recent-list">
+            <% for(var i=0; i<20; i++){ %>
+              <a href=<%= data.recent[i].track.external_urls.spotify%>><li class="list-group-item list-group-item-action"><%=data.recent[i].track.name%></li></a>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+<%- include('htmlBottom'); -%>

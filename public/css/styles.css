@@ -1,0 +1,97 @@
+.navbar{
+    padding: 1rem 0.2rem;
+    margin: 0.5rem 0.5rem;
+    border: 5px solid rgb(157, 255, 0);
+    border-radius: 5px;
+    --bs-navbar-toggler-border-color: rgb(157, 255, 0);
+}
+
+footer{
+    text-align: right;
+    margin-top:20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-toggler{
+    color: rgb(157, 255, 0);
+    background-color: rgb(157, 255, 0);
+}
+
+.nav-link{
+    margin-left: 5px;
+    --bs-nav-link-color: rgb(157, 255, 0);
+    --bs-nav-link-hover-color: rgba(157, 255, 0, 0.676);
+}
+
+body{
+    background-color:black;
+    color: rgb(157, 255, 0);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin-top: 20%;
+    margin-left: 6%;
+    margin-right: 10%;
+    font-size: 2rem;
+}
+
+.navbar-brand{
+    margin-left: 5.5%;
+    color:rgb(157, 255, 0);
+    --bs-navbar-brand-hover-color: rgba(157, 255, 0, 0.676);
+}
+
+.navbar-nav{
+    margin-left: 7%;
+}
+
+
+#about{
+    text-align: left;
+}
+
+.box1{
+    padding: 1rem 0.2rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 5px;
+    min-height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box2{
+    padding: 1rem 0.2rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.col-4{
+    width: 30%;
+}
+
+
+.list-group{
+    --bs-list-group-border-color : rgb(157, 255, 0);
+    --bs-list-group-action-hover-color: #000;
+}
+
+.list-group-item{
+    color:rgb(157, 255, 0);
+    background-color: black;
+    --bs-list-group-action-hover-bg: rgb(157, 255, 0);
+}
+
+a{
+    color: rgb(157, 255, 0);
+    text-decoration: none;
+}

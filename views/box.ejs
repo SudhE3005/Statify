@@ -1,0 +1,35 @@
+
+<br><br>
+<div class="box" id=<%= type %>>
+    <div class="container text-center">
+        <div class="row justify-content-evenly">
+            <div class="col-md-4">
+                <br>
+                <h3>All time</h3> <br>
+                <ul class="list-group">
+                    <% for(var i=0; i<5; i++){ %>
+                    <a href=<%= L[i].external_urls.spotify%>><li class="list-group-item list-group-item-action"><%=L[i].name%></li></a>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <h3>Past 6 Months</h3> <br>
+                <ul class="list-group">
+                    <% for(var i=0; i<5; i++){ %>
+                        <a href=<%= M[i].external_urls.spotify%>><li class="list-group-item list-group-item-action"><%=M[i].name%></li></a>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <h3>Past 4 weeks</h3> <br>
+                <ul class="list-group">
+                    <% for(var i=0; i<5; i++){ %>
+                        <a href=<%= S[i].external_urls.spotify%>><li class="list-group-item list-group-item-action"><%=S[i].name%></li></a>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
