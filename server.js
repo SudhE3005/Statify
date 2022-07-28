@@ -1,5 +1,7 @@
 const express = require("express")
 const SpotifyWebApi = require("spotify-web-api-node")
+const bodyParser = require("body-parser")
+const path = require("path")
 require('dotenv').config();
 
 var credentials = {
